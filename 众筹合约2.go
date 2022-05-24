@@ -12,7 +12,7 @@ var Ended bool              // 众筹结束标记
 var Gives = map[string]int{} // 所有参与众筹者的出价
 var Sum int //当前合约一共收到了多少筹款
 var Target int //合约预定需要收到多少筹款才算众筹成功
-var exceedContinue bool //募集到指定资金后是否继续接受新的资金
+var ExceedContinue bool //募集到指定资金后是否继续接受新的资金
 
 func init() {
 	Beneficiary = contract.Caller()              // 受益人默认为发布合约的人
