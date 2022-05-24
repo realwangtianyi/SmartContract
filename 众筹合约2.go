@@ -36,7 +36,7 @@ func Give(args map[string]interface{}) (interface{}, error) {
 	}
 
 	Gives[contract.Caller()] += contract.Value()
-
+	Sum +=  contract.Value()
 	return nil, nil
 }
 
