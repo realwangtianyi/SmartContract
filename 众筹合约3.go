@@ -8,7 +8,6 @@ import (
 )
 
 var Beneficiary string      // 众筹受益人
-var HighestGiver string    // 当前的最高出价人
 var FundingEnd time.Time    // 结束时间
 var Ended bool              // 众筹结束标记
 var Gives = map[string]int{} // 所有参与众筹者的出价
